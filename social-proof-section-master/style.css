@@ -49,11 +49,12 @@ aside p{
 }
 
 .avaliacao .rate{
-    background-color: var(--corneutra2);
+    background-color: hsl(300, 19%, 85%);
     width: 100%;
     height: 80px;
     border-radius: 10px;    
     margin-bottom: 10px;
+    position: relative;
 }
 .span{
     padding-top: 7px;
@@ -114,4 +115,106 @@ article .caixa h4 span{
 }
 article .caixa p{
     padding-top: 20px;
+}
+
+@media screen and (min-width: 1440px){
+    body{
+        background: white url(images/bg-pattern-top-desktop.svg);
+        background-size: contain;
+    }
+    main{
+        width: 69vw;
+        padding-top: 100px;
+    }
+    div.tudo{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+    aside{
+        height: 350px;
+    }
+    aside h1{
+        font-size: 3.9em;
+        width: 380px;
+    }
+    aside p{
+        font-size: 1.2em;
+        color: var(--corneutra);
+        width: 450px;
+        line-height: 25px;
+        float: left;
+    }
+    .avaliacao{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 20px;
+        position: relative;
+        top: -150px;
+        left: -70px;
+    }
+    .avaliacao .rate{
+        width: 470px;
+        height: 60px;
+        float: right;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .avaliacao .rate p{
+        height: 20px;
+        position: relative;
+        top: 10px;
+        padding: 10px;
+    }
+    .avaliacao .rate .span{
+        display: flex;
+        width: 200px;
+        position: relative;
+        justify-content: flex-end;
+       top: -4px;
+       left: 10px;
+    }
+    .avaliacao .rate:nth-child(1){
+        left: 0px;
+    }
+
+    .avaliacao .rate:nth-child(2){
+        position: relative;
+        left: 35px;
+    }
+    .avaliacao .rate:nth-child(3){
+        position: relative;
+        left: 70px;
+    }
+    
+    main article{
+        display: flex;
+        gap: 25px;
+        height: 350px;
+    }
+
+    main article .caixa{
+        width: 350px;
+        padding: 20px
+    }
+    main article .caixa p{
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+    main article .caixa:nth-child(1){
+        top: 0px;
+    }
+
+    main article .caixa:nth-child(2){
+        position: relative;
+        top: 35px;
+    }
+    main article .caixa:nth-child(3){
+        position: relative;
+        top: 70px;
+    }
 }
